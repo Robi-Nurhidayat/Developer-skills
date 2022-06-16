@@ -19,12 +19,14 @@
 // 5. memanggil fungsi
 
 const tampilPeramalan = function (arr) {
-  const temperatur = arr;
   let day = 0;
+  let str = "";
 
-  for (let i = 0; i < temperatur.length; i++) {
-    console.log(`... ${temperatur[i]}oC dihari ke ${(day = i + 1)}`);
+  for (let i = 0; i < arr.length; i++) {
+    str = str + ` ...${arr[i]}oC di hari ke-${(day = i + 1)}`;
   }
+
+  console.log(str);
 };
 
 tampilPeramalan([17, 21, 23]);
